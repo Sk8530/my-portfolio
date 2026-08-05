@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexora Coder's</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#4f46e5;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    margin-left:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#4f46e5;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(135deg,#4f46e5,#06b6d4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:white;
+    color:#4f46e5;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:100px 0;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h2{
+    font-size:40px;
+    color:#4f46e5;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#4f46e5;
+}
+
+form{
+    display:grid;
+    gap:20px;
+    max-width:650px;
+    margin:auto;
+}
+
+input,textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#4f46e5;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:#4338ca;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+nav li{
+    margin:0 12px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Nexora Coder's</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#Project">Project</li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Build Amazing Websites</h1>
+
+<p>
+A beautiful responsive landing page built using only HTML, CSS and JavaScript.
+</p>
+
+<a class="btn" href="#services">Explore</a>
+
+</div>
+
+</section>
+
+<section id="about" class="fade">
+
+<div class="title">
+<h2>About Us</h2>
+</div>
+
+<div class="about">
+
+<img src="https://picsum.photos/600/400" alt="About">
+
+<div>
+
+<p>
+<b>About NEXORA</b>
+
+NEXORA is a technology-driven team founded by three passionate BCA students with a shared vision of learning, 
+building, and innovating through software development. Our name represents "Next Generation + Aura",
+ reflecting our commitment to creating modern, reliable, and user-focused digital solutions.
+We specialize in designing and developing websites, web applications, and management systems that solve real-world business challenges.
+ Every project is built with a strong focus on clean design, secure development, performance, and user experience.
+Our mission is to transform ideas into practical digital products while continuously improving our technical skills and delivering high-quality solutions.
+ From academic projects to professional software, NEXORA believes in innovation, teamwork, and continuous growth.
+Our Motto:
+"Code. Create. Innovate."
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services" class="fade">
+
+<div class="title">
+<h2>Our Services</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Inventory Management Systems</h3>
+<p>Create stunning user interfaces with modern layouts.</p>
+</div>
+
+<div class="card">
+<h3>Business Management Solutions</h3>
+<p>Fast, secure and scalable web applications.</p>
+</div>
+
+<div class="card">
+<h3>SEO</h3>
+<p>Improve your search rankings and online visibility.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="fade">
+
+<div class="title">
+<h2>Contact Us</h2>
+</div>
+
+<form id="contactForm">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Nexora. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+    observer.observe(el);
+});
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+    e.preventDefault();
+    alert("Thank you! Your message has been sent.");
+    this.reset();
+});
+</script>
+
+</body>
+</html>
